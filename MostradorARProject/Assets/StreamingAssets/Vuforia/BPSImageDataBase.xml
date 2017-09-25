@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="PinkFloydMarker" size="100.000000 132.756332" />
-    <ImageTarget name="rumpusTarget" size="100.000000 62.068966" />
     <ImageTarget name="Stones" size="100.000000 70.000000" />
-    <ImageTarget name="MarcadorSmash2" size="100.000000 88.906250" />
-    <ImageTarget name="MarcadorSmash" size="100.000000 88.959663" />
   </Tracking>
 </QCARConfig>
