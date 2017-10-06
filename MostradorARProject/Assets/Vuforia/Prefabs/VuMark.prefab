@@ -5,14 +5,14 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 474980}
-  - 114: {fileID: 11452626}
-  - 23: {fileID: 2356340}
-  - 33: {fileID: 3307842}
-  - 114: {fileID: 11468754}
-  - 114: {fileID: 11403404}
+  - component: {fileID: 474980}
+  - component: {fileID: 11452626}
+  - component: {fileID: 2356340}
+  - component: {fileID: 3307842}
+  - component: {fileID: 11468754}
+  - component: {fileID: 11403404}
   m_Layer: 0
   m_Name: VuMark
   m_TagString: Untagged
@@ -28,10 +28,11 @@ Transform:
   m_GameObject: {fileID: 146090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2356340
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -41,22 +42,28 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 30b97d537113d0441889f1559f555128, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &3307842
 MeshFilter:
@@ -87,11 +94,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49eb8fd3a6161e642833e71c01c1a6c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: '--- EMPTY ---'
+  mTrackableName: Chateau
   mPreserveChildSize: 0
-  mInitializedInEditor: 0
-  mDataSetPath: '--- EMPTY ---'
-  mExtendedTracking: 0
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/BPSVumark.xml
+  mExtendedTracking: 1
   mInitializeSmartTerrain: 0
   mReconstructionToInitialize: {fileID: 0}
   mSmartTerrainOccluderBoundsMin: {x: 0, y: 0, z: 0}
@@ -99,9 +106,21 @@ MonoBehaviour:
   mIsSmartTerrainOccluderOffset: 0
   mSmartTerrainOccluderOffset: {x: 0, y: 0, z: 0}
   mSmartTerrainOccluderRotation: {x: 0, y: 0, z: 0, w: 0}
-  mSmartTerrainOccluderLockedInPlace: 0
   mAutoSetOccluderFromTargetSize: 0
-  mAspectRatio: 1
+  mAspectRatio: 0.49341217
+  mWidth: 100
+  mHeight: 49.341217
+  mPreviewImage: Assets/Editor/Vuforia/BPSVumark/0a4af361be244ba6b12155d3615b2fd1_scaled.png
+  mIdType: 1
+  mIdLength: 10
+  mBoundingBox:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 85.916
+    height: 42.392
+  mOrigin: {x: 3.715, y: 3.2409973}
+  mTrackingFromRuntimeAppearance: 0
 --- !u!114 &11468754
 MonoBehaviour:
   m_ObjectHideFlags: 1

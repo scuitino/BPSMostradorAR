@@ -15,8 +15,8 @@ MonoBehaviour:
     vuforiaLicenseKey: AVlmy9f/////AAAAGSwv8EhmIkL3tu++3bsMR2lnCmijgHGHThvKrYF3ACa/XhleY1Zx0XgYfHkeXrd6kWTmYaLakfXiGHg57J0xDY5S7R/W417k0g/ZN0TAOnKIPvedUbbGJxHT4CWLg4w/MbhlGltaS8ENy4MXqMAGOuV1QL1e4P1AO0AyXU6Inkf9Ecky/s7y6WfWsBbXNtccp2Vmh+ZxpdbLcT6dBWSMC7hzUJATgo8N2FsrWl31UCkZlQSDlFzRlm4KW4m1Z9hMFoluhMnd1BjusZToBPX+T8/gsegTbUnzOeL+KJBwq7HUR79QZI9pD4DktQZ+Jl5zdhLLDO4X2uWlITjsXEApfIQf8+Tzvbcb+gDf99ARMB00
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
-    maxSimultaneousObjectTargets: 1
+    maxSimultaneousImageTargets: 2
+    maxSimultaneousObjectTargets: 2
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -44,8 +44,10 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - BPSVumark
     - BPSImageDataBase
     dataSetsToActivate:
+    - BPSVumark
     - BPSImageDataBase
   videoBackground:
     clippingMode: 0
@@ -64,7 +66,7 @@ MonoBehaviour:
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: Webcam C170
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30
